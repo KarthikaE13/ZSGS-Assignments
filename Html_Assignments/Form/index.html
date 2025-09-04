@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Tech Fest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Radiant Banner -->
+    <div class="banner">
+        <img src="image.png" alt="Tech Fest Banner">
+        <div class="banner-text">Join Our Tech Fest</div>
+    </div>
+
+    <div class="container">
+        <form id="techFestForm">
+            <label>Full Name:
+                <input type="text" id="name" placeholder="Enter your name">
+                <small class="error" id="nameError"></small>
+            </label>
+
+            <label>Email:
+                <input type="email" id="email" placeholder="Enter your email">
+                <small class="error" id="emailError"></small>
+            </label>
+
+            <label>Phone Number:
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                <small class="error" id="phoneError"></small>
+            </label>
+
+            <label>Age:
+                <input type="number" id="age" placeholder="Enter your age">
+                <small class="error" id="ageError"></small>
+            </label>
+
+            <label>College Name:
+                <input type="text" id="college" placeholder="Enter your college">
+                <small class="error" id="collegeError"></small>
+            </label>
+
+            <label>City:
+                <input type="text" id="city" placeholder="Enter your city">
+                <small class="error" id="cityError"></small>
+            </label>
+
+            <label>State:
+                <input type="text" id="state" placeholder="Enter your state">
+                <small class="error" id="stateError"></small>
+            </label>
+
+            <label>Event Interested:
+                <select id="event">
+                    <option value="">Select event</option>
+                    <option>Hackathon</option>
+                    <option>Robo Race</option>
+                    <option>Coding Challenge</option>
+                    <option>Tech Quiz</option>
+                </select>
+                <small class="error" id="eventError"></small>
+            </label>
+
+            <label>Gender:
+                <select id="gender">
+                    <option value="">Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <small class="error" id="genderError"></small>
+            </label>
+
+            <label>Message:
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                <small class="error" id="messageError"></small>
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="submittedDetails" class="hidden">
+            <h2>Submitted Details</h2>
+            <div id="details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
